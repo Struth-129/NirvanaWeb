@@ -7,17 +7,19 @@ import Chatbot from './components/Chatbot';
 import './main';
 import './util';
 import Home from './components/Home';
+import Test from './pages/Test';
 
 ReactDOM.render(
   <>
-  <div id = "wrapper">
+  {/* <div id = "wrapper">
     <Header/>
       <div id="main">
         <Home/>
       </div>
-      <Side/>
-  </div>
-  <Chatbot/>
+      <Side/> */}
+      <Test/>
+  {/* </div>
+  <Chatbot/> */}
   </>,
   document.getElementById('root')
 );

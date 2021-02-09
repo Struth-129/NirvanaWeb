@@ -3627,3 +3627,30 @@ input, select, textarea {
 			}
 
 		}
+
+.test_main{
+	align-content: center;
+	
+	
+}
+.test_box{
+	height: 400px;
+	width: 800px !important;
+	background-color:white;
+	justify-content: center;
+	position: relative;
+	left: 25%;
+	top: 25%;
+}
+.test_btn{
+	position: absolute;
+	left:37%;
+	margin-top: 50px;
+}
+.test_btn_h{
+	transition: transform 10s;
+	margin-right: 30px;
+}
+.test_btn_h:hover{
+	transform: scale(1.2);
+}	
