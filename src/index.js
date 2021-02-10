@@ -6,20 +6,18 @@ import Side from './components/Side';
 import Chatbot from './components/Chatbot';
 import './main';
 import './util';
-import Home from './components/Home';
+import Main from './pages/Main';
 import Test from './pages/Test';
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <>
-  {/* <div id = "wrapper">
-    <Header/>
-      <div id="main">
-        <Home/>
-      </div>
-      <Side/> */}
-      <Test/>
-  {/* </div>
-  <Chatbot/> */}
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Main} />
+      <Route path="/Home" component={Main} />
+      <Route path="/Test" component={Test} />
+    </Switch>
+  </BrowserRouter>
   </>,
   document.getElementById('root')
 );

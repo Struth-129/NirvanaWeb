@@ -16,6 +16,11 @@ function Header () {
 					<li><a href="#">About Us</a></li>
 				</ul>
 			</nav>
+			<nav class="mobile">
+				<ul>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
 			<nav class="main">
 					<ul>
 					<li class="search">
@@ -39,7 +44,7 @@ function Header () {
 							<section>
 								<ul class="links">
 									<li>
-										<a href="#">
+										<a href="/Test">
 											<h3>Nirvana Stress test</h3>
 											<p>Some content here</p>
 										</a>

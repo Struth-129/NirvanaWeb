@@ -3639,12 +3639,14 @@ input, select, textarea {
 	background-color:white;
 	justify-content: center;
 	position: relative;
-	left: 25%;
-	top: 25%;
+	left: 23%;
+	top: 23%;
+	box-shadow: 0.1px 0.1px 5px 0.1px;
+	border-radius: 3px;
 }
 .test_btn{
 	position: absolute;
-	left:37%;
+	left:40%;
 	margin-top: 50px;
 }
 .test_btn_h{
