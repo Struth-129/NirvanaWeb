@@ -74,7 +74,7 @@ function Header () {
 									<li><a href="#" class="button large fit">Log In</a></li>
 								</ul>
 								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Sign Up</a></li>
+									<li><a href="/signin" class="button large fit">Sign Up</a></li>
 								</ul>
 							</section>
 

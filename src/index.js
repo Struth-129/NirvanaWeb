@@ -8,6 +8,7 @@ import './main';
 import './util';
 import Main from './pages/Main';
 import Test from './pages/Test';
+import Signin from './pages/Signin';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path="/" component={Main} />
       <Route path="/Home" component={Main} />
       <Route path="/Test" component={Test} />
+      <Route path="/signin" component={Signin}/>
     </Switch>
   </BrowserRouter>
   </>,

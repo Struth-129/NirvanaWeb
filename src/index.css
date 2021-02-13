@@ -3642,7 +3642,7 @@ input, select, textarea {
 	left: 23%;
 	top: 23%;
 	box-shadow: 0.1px 0.1px 5px 0.1px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 .test_btn{
 	position: absolute;
