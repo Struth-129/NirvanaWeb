@@ -6,8 +6,8 @@ import '../index.css';
 import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
 
-var n = 1;
-var ques = ["abc"];
+var n = 0;
+var ques = ["Hi there"];
 function Test() {
   const [value, setValue] = React.useState('Never');
   const handleChange = (event) => {
@@ -38,8 +38,8 @@ function Test() {
   var i = 0;
   function ind()
   {
-    i++;
-    setQues(data[i]);
+    n++;
+    setQues(data[n]);
     console.log(data.length)
   }
   return (
@@ -50,7 +50,7 @@ function Test() {
     <div className="test_main">
       <Jumbotron fluid className="test_box">
         <Container fluid className="test_middle">
-          <h3 className="display-6">{n} . {curques}</h3>
+          <h3 className="display-6">{n+1} . {curques}</h3>
           <hr></hr>
           <p className="upptext lead">Please Select the most suitable option</p>
           <FormControl component="fieldset">
