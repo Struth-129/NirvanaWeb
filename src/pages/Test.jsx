@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import Header from '../components/Header';
 import '../main';
 import '../util';
@@ -12,6 +12,30 @@ function Test() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('data.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  useEffect(()=>{
+    getData()
+  },[])
+
+
   return (
     <>
     <div id = "wrapper">
@@ -20,7 +44,7 @@ function Test() {
     <div className="test_main">
       <Jumbotron fluid className="test_box">
         <Container fluid className="test_middle">
-          <h3 className="display-6">{n} . {ques}</h3>
+          <h3 className="display-6">{n} . {data && data.length>0 && data.map((item)=><p>{item.friends}</p>)}</h3>
           <hr></hr>
           <p className="upptext lead">Please Select the most suitable option</p>
           <FormControl component="fieldset">
