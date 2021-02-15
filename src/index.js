@@ -20,6 +20,7 @@ ReactDOM.render(
       <Route path="/Test" component={Test} />
       <Route path="/signin" component={Signin}/>
       <Route path="/about" component={About}/>
+      <Route path="*" component={Err404}/>
     </Switch>
   </BrowserRouter>
   </>,
