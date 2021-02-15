@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/nirvana/static/css/main.e0ab766c.chunk.css",
-    "main.js": "/nirvana/static/js/main.909c4fec.chunk.js",
-    "main.js.map": "/nirvana/static/js/main.909c4fec.chunk.js.map",
-    "runtime-main.js": "/nirvana/static/js/runtime-main.078e2f5d.js",
-    "runtime-main.js.map": "/nirvana/static/js/runtime-main.078e2f5d.js.map",
-    "static/js/2.19ce96d1.chunk.js": "/nirvana/static/js/2.19ce96d1.chunk.js",
-    "static/js/2.19ce96d1.chunk.js.map": "/nirvana/static/js/2.19ce96d1.chunk.js.map",
-    "index.html": "/nirvana/index.html",
-    "static/css/main.e0ab766c.chunk.css.map": "/nirvana/static/css/main.e0ab766c.chunk.css.map",
-    "static/js/2.19ce96d1.chunk.js.LICENSE.txt": "/nirvana/static/js/2.19ce96d1.chunk.js.LICENSE.txt",
-    "static/media/cover.420649b8.png": "/nirvana/static/media/cover.420649b8.png",
-    "static/media/logo.d0896f16.png": "/nirvana/static/media/logo.d0896f16.png",
-    "static/media/med.c34e14db.png": "/nirvana/static/media/med.c34e14db.png",
-    "static/media/strt.da458ffe.png": "/nirvana/static/media/strt.da458ffe.png"
+    "main.css": "/NirvanaWeb/static/css/main.994bcb69.chunk.css",
+    "main.js": "/NirvanaWeb/static/js/main.702bbb76.chunk.js",
+    "main.js.map": "/NirvanaWeb/static/js/main.702bbb76.chunk.js.map",
+    "runtime-main.js": "/NirvanaWeb/static/js/runtime-main.bc07557b.js",
+    "runtime-main.js.map": "/NirvanaWeb/static/js/runtime-main.bc07557b.js.map",
+    "static/js/2.b4cb88b0.chunk.js": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js",
+    "static/js/2.b4cb88b0.chunk.js.map": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js.map",
+    "index.html": "/NirvanaWeb/index.html",
+    "static/css/main.994bcb69.chunk.css.map": "/NirvanaWeb/static/css/main.994bcb69.chunk.css.map",
+    "static/js/2.b4cb88b0.chunk.js.LICENSE.txt": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js.LICENSE.txt",
+    "static/media/cover.420649b8.png": "/NirvanaWeb/static/media/cover.420649b8.png",
+    "static/media/med.c34e14db.png": "/NirvanaWeb/static/media/med.c34e14db.png",
+    "static/media/strt.da458ffe.png": "/NirvanaWeb/static/media/strt.da458ffe.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.078e2f5d.js",
-    "static/js/2.19ce96d1.chunk.js",
-    "static/css/main.e0ab766c.chunk.css",
-    "static/js/main.909c4fec.chunk.js"
+    "static/js/runtime-main.bc07557b.js",
+    "static/js/2.b4cb88b0.chunk.js",
+    "static/css/main.994bcb69.chunk.css",
+    "static/js/main.702bbb76.chunk.js"
   ]
 }
