@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nirvana/static/css/main.e0ab766c.chunk.css",
+    "main.js": "/nirvana/static/js/main.909c4fec.chunk.js",
+    "main.js.map": "/nirvana/static/js/main.909c4fec.chunk.js.map",
+    "runtime-main.js": "/nirvana/static/js/runtime-main.078e2f5d.js",
+    "runtime-main.js.map": "/nirvana/static/js/runtime-main.078e2f5d.js.map",
+    "static/js/2.19ce96d1.chunk.js": "/nirvana/static/js/2.19ce96d1.chunk.js",
+    "static/js/2.19ce96d1.chunk.js.map": "/nirvana/static/js/2.19ce96d1.chunk.js.map",
+    "index.html": "/nirvana/index.html",
+    "static/css/main.e0ab766c.chunk.css.map": "/nirvana/static/css/main.e0ab766c.chunk.css.map",
+    "static/js/2.19ce96d1.chunk.js.LICENSE.txt": "/nirvana/static/js/2.19ce96d1.chunk.js.LICENSE.txt",
+    "static/media/cover.420649b8.png": "/nirvana/static/media/cover.420649b8.png",
+    "static/media/logo.d0896f16.png": "/nirvana/static/media/logo.d0896f16.png",
+    "static/media/med.c34e14db.png": "/nirvana/static/media/med.c34e14db.png",
+    "static/media/strt.da458ffe.png": "/nirvana/static/media/strt.da458ffe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.078e2f5d.js",
+    "static/js/2.19ce96d1.chunk.js",
+    "static/css/main.e0ab766c.chunk.css",
+    "static/js/main.909c4fec.chunk.js"
+  ]
+}
