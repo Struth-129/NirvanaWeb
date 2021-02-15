@@ -10,7 +10,7 @@ function Side (){
         <>
         <section id="sidebar">
     <section id="intro">
-        <a href="#" className="logo"><img src={logo} alt="" /></a>
+        <a href="/" className="logo"><img src={logo} alt="" /></a>
         <header>
             <h2>Nirvana</h2>
             <p> The simple, easy and secure mental health solution.
@@ -23,7 +23,7 @@ function Side (){
                     <header>
                         <h3><a href="single.html">Name</a></h3>
                         <time class="published" datetime="2015-10-20">February 20, 2020</time>
-                        <a href="#" class="author"><img src={logo} alt="" /></a>
+                        <a href="/home" class="author"><img src={logo} alt="" /></a>
                     </header>
                     <a href="single.html" class="image"><img src={cover} alt="" /></a>
                 </article>
@@ -108,7 +108,7 @@ function Side (){
         <p>We aim to reach out to everyone to help them relax by the practice of the NIRI Test and NIRI tips based on extensive research and expertise suggestions. Nirvana helps making identification and treatment easy and secure by its encrypted E- counsel and wellness features for all groups of people.
 .</p>
         <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
+            <li><a href="/about" class="button">Learn More</a></li>
         </ul>
     </section>
     <section id="footer">

@@ -9,6 +9,7 @@ import './util';
 import Main from './pages/Main';
 import Test from './pages/Test';
 import Signin from './pages/Signin';
+import About from "./pages/About";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path="/Home" component={Main} />
       <Route path="/Test" component={Test} />
       <Route path="/signin" component={Signin}/>
+      <Route path="/about" component={About}/>
     </Switch>
   </BrowserRouter>
   </>,

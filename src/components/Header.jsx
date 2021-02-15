@@ -13,7 +13,7 @@ function Header () {
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Music</a></li>
 					<li><a href="#">Blogs</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="/about">About Us</a></li>
 				</ul>
 			</nav>
 			<nav class="mobile">

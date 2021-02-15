@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-// import '../index.css';
+import '../index.css';
 import logo from '../images/logo.png';
 function Copyright() {
     return (
@@ -39,7 +39,7 @@ function Copyright() {
       backgroundColor: theme.palette.secondary.main,
     },
     form: {
-      width: '100%', // Fix IE 11 issue.
+      width: '100%',
       marginTop: theme.spacing(1),
     },
     submit: {
