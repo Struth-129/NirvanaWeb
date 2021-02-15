@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/NirvanaWeb/static/css/main.994bcb69.chunk.css",
-    "main.js": "/NirvanaWeb/static/js/main.702bbb76.chunk.js",
-    "main.js.map": "/NirvanaWeb/static/js/main.702bbb76.chunk.js.map",
+    "main.js": "/NirvanaWeb/static/js/main.67588700.chunk.js",
+    "main.js.map": "/NirvanaWeb/static/js/main.67588700.chunk.js.map",
     "runtime-main.js": "/NirvanaWeb/static/js/runtime-main.bc07557b.js",
     "runtime-main.js.map": "/NirvanaWeb/static/js/runtime-main.bc07557b.js.map",
-    "static/js/2.b4cb88b0.chunk.js": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js",
-    "static/js/2.b4cb88b0.chunk.js.map": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js.map",
+    "static/js/2.d0aa5926.chunk.js": "/NirvanaWeb/static/js/2.d0aa5926.chunk.js",
+    "static/js/2.d0aa5926.chunk.js.map": "/NirvanaWeb/static/js/2.d0aa5926.chunk.js.map",
     "index.html": "/NirvanaWeb/index.html",
     "static/css/main.994bcb69.chunk.css.map": "/NirvanaWeb/static/css/main.994bcb69.chunk.css.map",
-    "static/js/2.b4cb88b0.chunk.js.LICENSE.txt": "/NirvanaWeb/static/js/2.b4cb88b0.chunk.js.LICENSE.txt",
+    "static/js/2.d0aa5926.chunk.js.LICENSE.txt": "/NirvanaWeb/static/js/2.d0aa5926.chunk.js.LICENSE.txt",
     "static/media/cover.420649b8.png": "/NirvanaWeb/static/media/cover.420649b8.png",
     "static/media/med.c34e14db.png": "/NirvanaWeb/static/media/med.c34e14db.png",
     "static/media/strt.da458ffe.png": "/NirvanaWeb/static/media/strt.da458ffe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bc07557b.js",
-    "static/js/2.b4cb88b0.chunk.js",
+    "static/js/2.d0aa5926.chunk.js",
     "static/css/main.994bcb69.chunk.css",
-    "static/js/main.702bbb76.chunk.js"
+    "static/js/main.67588700.chunk.js"
   ]
 }
