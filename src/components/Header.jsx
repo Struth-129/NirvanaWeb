@@ -13,7 +13,7 @@ function Header () {
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Music</a></li>
 					<li><a href="#">Blogs</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="/about">About Us</a></li>
 				</ul>
 			</nav>
 			<nav class="mobile">
@@ -74,7 +74,7 @@ function Header () {
 									<li><a href="#" class="button large fit">Log In</a></li>
 								</ul>
 								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Sign Up</a></li>
+									<li><a href="/signin" class="button large fit">Sign Up</a></li>
 								</ul>
 							</section>
 
