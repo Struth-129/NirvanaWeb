@@ -8,12 +8,16 @@ import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@mate
 const data = require('../data.json');
 
 var n = 0;
-var ques = ["Hi there"];
+var ques = ["Little interest or pleasure in doing  favorite things?","Feeling down, depressed, or hopeless ?", "Trouble falling or staying asleep, or sleeping too much ?",
+              "Feeling tired or having little energy ?", "Poor appetite or overeating ?", "Feeling bad about yourself — or that you are a failure or have let yourself down or your family down ?",
+            "Trouble concentrating on things, such as reading the newspaper or watching television ?","Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual ?",
+          "Thoughts that you would be better off dead or of hurting yourself in some way ?"];
 function Test() {
   const [value, setValue] = React.useState('Never');
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+<<<<<<< HEAD
   // const [data,setData]=useState([]);
   // const getData=()=>{
   //   fetch('data.json'
@@ -37,6 +41,28 @@ function Test() {
   //   getData()
   // },[])
   console.log(data)
+=======
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('data.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(myJson) {
+        setData(myJson)
+      });
+  }
+  useEffect(()=>{
+    getData()
+  },[])
+>>>>>>> 7a2cbda1a4d46adc029f2b60d9e67bfecd00e4d8
   const[curques,setQues] = useState(ques[0]);
   function ind()
   {
