@@ -10,7 +10,7 @@ function Header () {
 			<h1><a href="index.html">Nirvana</a></h1>
 			<nav class="links">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="#">Music</a></li>
 					<li><a href="#">Blogs</a></li>
 					<li><a href="/about">About Us</a></li>

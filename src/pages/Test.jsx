@@ -5,6 +5,7 @@ import '../util';
 import '../index.css';
 import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
+const data = require('../data.json');
 
 var n = 0;
 var ques = ["Hi there"];
@@ -13,34 +14,34 @@ function Test() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        return response.json();
-      })
-      .then(function(myJson) {
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
+  // const [data,setData]=useState([]);
+  // const getData=()=>{
+  //   fetch('data.json'
+  //   ,{
+  //     headers : { 
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //      }
+  //   }
+  //   )
+  //     .then(function(response){
+  //       return response.json();
+  //     })
+  //     .then(function(myJson) {
+  //       setData(myJson)
+  //     });
+  // }
+  // getData();
+  // console.log(getData());
+  // useEffect(()=>{
+  //   getData()
+  // },[])
   console.log(data)
   const[curques,setQues] = useState(ques[0]);
-  var i = 0;
   function ind()
   {
     n++;
     setQues(data[n]);
-    console.log(data.length)
   }
   return (
     <>

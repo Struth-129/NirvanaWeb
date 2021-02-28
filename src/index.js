@@ -10,6 +10,7 @@ import Main from './pages/Main';
 import Test from './pages/Test';
 import Signin from './pages/Signin';
 import About from "./pages/About";
+import Err404 from "./pages/Err404";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <>
