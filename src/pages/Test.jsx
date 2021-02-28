@@ -17,7 +17,6 @@ function Test() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
-<<<<<<< HEAD
   // const [data,setData]=useState([]);
   // const getData=()=>{
   //   fetch('data.json'
@@ -41,28 +40,6 @@ function Test() {
   //   getData()
   // },[])
   console.log(data)
-=======
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        return response.json();
-      })
-      .then(function(myJson) {
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
->>>>>>> 7a2cbda1a4d46adc029f2b60d9e67bfecd00e4d8
   const[curques,setQues] = useState(ques[0]);
   function ind()
   {
@@ -91,7 +68,6 @@ function Test() {
         </Container>
         </Jumbotron>
         <ul className="actions pagination test_btn">
-		<li id="prev"><button className="  disabled  button large previous test_btn_h">Previous Page</button></li>
 		<li id="next"><button className="button large next test_btn_h" onClick = {ind} >Next Page</button></li>
 	  </ul>
     </div>
