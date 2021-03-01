@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'; 
 import Header from '../components/Header';
-import {Score} from './Test';
+// import {Score} from './Test';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -32,9 +32,9 @@ const Result = (props) => {
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">Lizard</Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <Score.Consumer>{(score)=>{
+            {/* <Score.Consumer>{(score)=>{
                     return <h1>{score}</h1>
-            }}</Score.Consumer>
+            }}</Score.Consumer> */}
           </Typography>
         </CardContent>
       </CardActionArea>

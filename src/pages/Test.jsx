@@ -55,4 +55,3 @@ function Test() {
 };
 
 export default Test;
-export {Score};
