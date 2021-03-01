@@ -7,44 +7,20 @@ import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
 const data = require('../data.json');
 
-var n = 0;
-var ques = ["Little interest or pleasure in doing  favorite things?","Feeling down, depressed, or hopeless ?", "Trouble falling or staying asleep, or sleeping too much ?",
-              "Feeling tired or having little energy ?", "Poor appetite or overeating ?", "Feeling bad about yourself — or that you are a failure or have let yourself down or your family down ?",
-            "Trouble concentrating on things, such as reading the newspaper or watching television ?","Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual ?",
-          "Thoughts that you would be better off dead or of hurting yourself in some way ?"];
+var n = 0,len = data.length;
 function Test() {
   const [value, setValue] = React.useState('Never');
   const handleChange = (event) => {
     setValue(event.target.value);
   };
-  // const [data,setData]=useState([]);
-  // const getData=()=>{
-  //   fetch('data.json'
-  //   ,{
-  //     headers : { 
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //      }
-  //   }
-  //   )
-  //     .then(function(response){
-  //       return response.json();
-  //     })
-  //     .then(function(myJson) {
-  //       setData(myJson)
-  //     });
-  // }
-  // getData();
-  // console.log(getData());
-  // useEffect(()=>{
-  //   getData()
-  // },[])
-  console.log(data)
-  const[curques,setQues] = useState(ques[0]);
+  const[curques,setQues] = useState(data[0]);
   function ind()
   {
     n++;
-    setQues(data[n]);
+    if(n>=len)
+    {
+      console.log(len);
+    }else setQues(data[n]);
   }
   return (
     <>
