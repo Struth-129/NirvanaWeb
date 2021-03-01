@@ -1,52 +1,42 @@
 import React from 'react'; 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from '../components/Header';
+import Side from '../components/Side';
 // import {Score} from './Test';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
+import md from '../images/md.png';
+import "../../src/index.css";
 
-const useStyles = makeStyles({
-    root: {
-      maxWidth: 345,
-    },
-    media: {
-      height: 140,
-    },
-  });
+
+
 
 const Result = (props) => {
-    return(
+  const location = useLocation();
+  var x = location.state.detail;
+  useEffect(() => {
+    console.log(location.pathname); // result: '/secondpage'
+    x = location.state.detail; // result: 'some_value'
+ }, [location]);
+  return(  
         <>
-        <h1>{props.score}</h1>
         <div id = 'wrapper'>
             <Header/>
-            <Card className={makeStyles.root}>
-                <CardActionArea>
-                    <CardMedia className={makeStyles.media} image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"/>
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">Result</Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {/* <Score.Consumer>{(score)=>{
-                    return <h1>{score}</h1>
-            }}</Score.Consumer> */}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+            <div id = "main">
+          <Card>
+        <CardImg top width="100%" src={md} alt="Card image cap" />
+        <CardBody>
+          <CardTitle tag="h5">Stress test</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">Score Card</CardSubtitle>
+          <CardText>Your result is {x}</CardText>
+          <Button className = "stress_res">Go back to Home</Button>
+        </CardBody>
+      </Card>
+    </div>
+    <Side/>
             </div>
         </>
     )

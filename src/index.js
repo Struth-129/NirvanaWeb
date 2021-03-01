@@ -11,16 +11,18 @@ import Test from './pages/Test';
 import Signin from './pages/Signin';
 import About from "./pages/About";
 import Err404 from "./pages/Err404";
+import Result from "./pages/Result";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 ReactDOM.render(
   <>
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Main} />
-      <Route path="/Home" component={Main} />
-      <Route path="/Test" component={Test} />
-      <Route path="/signin" component={Signin}/>
-      <Route path="/about" component={About}/>
+      <Route exact path="/Home" component={Main} />
+      <Route exact path="/Test" component={Test} />
+      <Route exact path="/signin" component={Signin}/>
+      <Route exact path="/about" component={About}/>
+      <Route exact path="/Result" component= {Result}/>
       <Route path="*" component={Err404}/>
     </Switch>
   </BrowserRouter>

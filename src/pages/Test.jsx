@@ -1,15 +1,20 @@
 import React, { useContext, useEffect, useState,createContext } from "react";
+import {Redirect} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import Header from '../components/Header';
 import '../main';
 import '../util';
 import '../index.css';
+import './Result';
 import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
 const data = require('../data.json');
 
 var n = 0,len = data.length,score = 0,ts = 0;
 function Test() {
+  let history = useHistory();
   const [value, setValue] = React.useState('Never');
+  const [nextpre,settext] = useState("Next Page");
   const handleChange = (event) => {
     setValue(event.target.value);
     if(event.target.value=='Never'){
@@ -23,13 +28,21 @@ function Test() {
     }
   };
   const[curques,setQues] = useState(data[0]);
-  function ind()
+  
+  const ind = ()=>
   { 
-    ts = score + ts;
+    ts+=score;
     console.log(ts);
-    n++;
     setQues(data[n]);
-    score = 0;
+    score = 0;n++;
+    if(n==len-1){
+      settext("Submit");
+    }
+    if(n==len){
+      history.push({
+        pathname: '/Result',
+        state: { detail: ts }
+    })}
   }
   return (
     <>
@@ -53,7 +66,7 @@ function Test() {
         </Container>
         </Jumbotron>
         <ul className="actions pagination test_btn">
-		<li id="next"><button className="button large next test_btn_h" onClick = {ind}>Next Page</button></li>
+		<li id="next"><button className="button large next test_btn_h" onClick = {ind}>{nextpre}</button></li>
 	  </ul>
     </div>
     </div>

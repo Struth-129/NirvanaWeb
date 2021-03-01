@@ -3666,3 +3666,10 @@ input, select, textarea {
 .Header{
 	background-color: yellow;
 }
+.stress_res{
+	background-color: #2ebaae !important;
+	font-weight: 900;
+}
+.stress_res:hover{
+	color: white !important;
+}
