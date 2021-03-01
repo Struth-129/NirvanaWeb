@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState,createContext } from "react";
 import Header from '../components/Header';
 import '../main';
 import '../util';
 import '../index.css';
+import Result from "./Result";
 import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
 const data = require('../data.json');
@@ -54,3 +55,4 @@ function Test() {
 };
 
 export default Test;
+export {Score};
