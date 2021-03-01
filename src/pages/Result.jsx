@@ -30,7 +30,7 @@ const Result = (props) => {
                     <CardMedia className={makeStyles.media} image="/static/images/cards/contemplative-reptile.jpg"
                     title="Contemplative Reptile"/>
                     <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">Lizard</Typography>
+                    <Typography gutterBottom variant="h5" component="h2">Result</Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             <Score.Consumer>{(score)=>{
                     return <h1>{score}</h1>
