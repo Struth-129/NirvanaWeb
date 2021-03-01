@@ -7,20 +7,29 @@ import { Jumbotron, Container } from 'reactstrap';
 import { FormControl, FormLabel, RadioGroup, FormControlLabel,Radio} from '@material-ui/core'
 const data = require('../data.json');
 
-var n = 0,len = data.length;
+var n = 0,len = data.length,score = 0,ts = 0;
 function Test() {
   const [value, setValue] = React.useState('Never');
   const handleChange = (event) => {
     setValue(event.target.value);
+    if(event.target.value=='Never'){
+      score = 0;
+    }else if(event.target.value=='mild'){
+      score = 1;
+    }else if(event.target.value=='moderate'){
+      score = 2;
+    }else{
+      score = 3;
+    }
   };
   const[curques,setQues] = useState(data[0]);
   function ind()
-  {
+  { 
+    ts = score + ts;
+    console.log(ts);
     n++;
-    if(n>=len)
-    {
-      console.log(len);
-    }else setQues(data[n]);
+    setQues(data[n]);
+    score = 0;
   }
   return (
     <>
