@@ -3635,12 +3635,12 @@ input, select, textarea {
 }
 .test_box{
 	height: 500px;
-	width: 800px !important;
+	width: 900px !important;
 	background-color:white;
 	justify-content: center;
 	position: relative;
-	left: 23%;
-	top: 23%;
+	left: 17%;
+	top: 20%;
 	box-shadow: 0.1px 0.1px 5px 0.1px;
 	border-radius: 2px;
 }

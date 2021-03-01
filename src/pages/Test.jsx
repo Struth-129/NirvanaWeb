@@ -31,10 +31,10 @@ function Test() {
   
   const ind = ()=>
   { 
-    ts+=score;
+    ts+=score;n++;
     console.log(ts);
     setQues(data[n]);
-    score = 0;n++;
+    score = 0;
     if(n==len-1){
       settext("Submit");
     }
@@ -52,7 +52,7 @@ function Test() {
         <div className="test_main">
           <Jumbotron fluid className="test_box">
           <Container fluid className="test_middle">
-            <h3 className="display-6">{n+1} . {curques}</h3>
+            <h3>{n+1} . {curques}</h3>
             <hr></hr>
           <p className="upptext lead">Please Select the most suitable option</p>
           <FormControl component="fieldset">
